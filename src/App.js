@@ -1,23 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import BasicExample from './card';
+import BasicExample2 from './nav';
+import BasicExample3 from './form';
+import DarkExample from './table';
+import AdvancedExample from './pagination';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      
+      <BasicExample2/>
+     
+      <div className='car2'><BasicExample3/></div>
+      <div className='car'> <BasicExample/> </div>
+      <div className='tab'><DarkExample/></div>
+      <div className='page'><AdvancedExample/></div>
+      
+     
+     
+      
     </div>
   );
 }
